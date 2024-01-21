@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="404"
+        android:text="@string/_404"
         android:gravity="center"
         android:textSize="200sp"
         android:layout_marginTop="10dp"/>
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="50sp"
-        android:text="Page Not Found "
+        android:text="@string/page_not_found"
         android:gravity="center"
         android:layout_marginTop="-50dp"/>
 
