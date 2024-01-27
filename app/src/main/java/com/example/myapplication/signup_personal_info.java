@@ -4,30 +4,31 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
-public class LoginActivity extends AppCompatActivity {
+public class signup_personal_info extends AppCompatActivity {
 
-    TextView tvLogin, tvPersonalInfo, tvForgotPass, tvNavSignup;
-    TextInputEditText etOwner, etPass;
+    TextView tvSignup, tvPersonalInfo, tvNavLogin;
 
-    Button btnLogin;
+    TextInputEditText etOwner, etMtag, etCnic;
+
+    Button btnNext1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_signup_personal_info);
         init();
     }
     public void init()
     {
-        tvLogin=findViewById(R.id.tvLogin);
+        tvSignup=findViewById(R.id.tvSignup);
         tvPersonalInfo=findViewById(R.id.tvPersonalInfo);
-        tvNavSignup=findViewById(R.id.tvNavLogin);
+        tvNavLogin=findViewById(R.id.tvNavLogin);
         etOwner=findViewById(R.id.etOwner);
-        etPass=findViewById(R.id.etPass);
+        etMtag=findViewById(R.id.etMtag);
+        etCnic=findViewById(R.id.etCnic);
     }
 }
