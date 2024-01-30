@@ -38,7 +38,7 @@ public class signup_personal_info extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else{
-                    Toast.makeText(signup_personal_info.this, "Field missing", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup_personal_info.this, "Field can not be empty", Toast.LENGTH_SHORT).show();
                 }
 
             }

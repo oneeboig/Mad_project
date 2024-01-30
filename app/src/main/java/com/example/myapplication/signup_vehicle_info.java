@@ -17,9 +17,7 @@ import java.util.Objects;
 public class signup_vehicle_info extends AppCompatActivity {
     TextView tvSignup, tvVehicleInfo, tvNavLogin;
     TextInputEditText etVehicleName, etVehicleType, etVehicleNumber;
-
     Button btnNext2;
-
     ImageView ivBack;
 
 
@@ -41,9 +39,8 @@ public class signup_vehicle_info extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else{
-                    Toast.makeText(signup_vehicle_info.this, "Field missing", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup_vehicle_info.this, "Field can not be empty", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
     }
