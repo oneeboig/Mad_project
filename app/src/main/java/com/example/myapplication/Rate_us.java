@@ -11,5 +11,15 @@ public class Rate_us extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rate_us);
+        init();
+    }
+    public void init()
+    {
+        back_btn=findViewById(R.id.back_btn);
+        star1=findViewById(R.id.star1);
+        star2=findViewById(R.id.star2);
+        star3=findViewById(R.id.star3);
+        star4=findViewById(R.id.star4);
+        star5=findViewById(R.id.star5);
     }
 }
