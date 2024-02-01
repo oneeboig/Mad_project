@@ -26,6 +26,10 @@ public class signup_vehicle_info extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_vehicle_info);
         init();
+        Intent intent = getIntent();
+        String Owner = intent.getStringExtra("Owner");
+        String Mtag = intent.getStringExtra("Mtag");
+        String Cnic = intent.getStringExtra("Cnic");
         btnNext2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +40,12 @@ public class signup_vehicle_info extends AppCompatActivity {
                 Intent intent;
                 if(!Vname.isEmpty() && !Vtype.isEmpty() && !Vnumber.isEmpty()){
                     intent = new Intent(signup_vehicle_info.this, signup_set_password.class);
+                    intent.putExtra("Owner" , Owner);
+                    intent.putExtra("Mtag" , Mtag);
+                    intent.putExtra("Cnic" , Cnic);
+                    intent.putExtra("Vname" , Vname);
+                    intent.putExtra("Vtype" , Vtype);
+                    intent.putExtra("Vnumber" , Vnumber);
                     startActivity(intent);
                 }
                 else{
