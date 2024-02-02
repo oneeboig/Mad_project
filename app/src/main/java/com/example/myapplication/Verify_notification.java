@@ -11,5 +11,11 @@ public class Verify_notification extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_notification);
+        init();
+    }
+    public void init()
+    {
+        back_btn=findViewById(R.id.back_btn);
+        btn_menu=findViewById(R.id.btn_menu);
     }
 }

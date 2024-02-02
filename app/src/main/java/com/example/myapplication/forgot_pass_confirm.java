@@ -26,8 +26,17 @@ public class forgot_pass_confirm extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String pass = etPass.getText().toString().trim();
+                String confirmPass = etConfirmPass.getText().toString().trim();
                 Intent i = new Intent(forgot_pass_confirm.this, Home_page.class);
-                Toast.makeText(forgot_pass_confirm.this,"Password Changed",Toast.LENGTH_SHORT).show();
+                if (!pass.isEmpty() && !confirmPass.isEmpty()) {
+                    Toast.makeText(forgot_pass_confirm.this, "Password Changed", Toast.LENGTH_SHORT).show();
+                    startActivity(i);
+                    finish();
+                }
+                else {
+                    Toast.makeText(forgot_pass_confirm.this,"Field(s) can not be empty",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

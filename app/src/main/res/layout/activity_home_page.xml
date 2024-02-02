@@ -37,7 +37,6 @@
         android:backgroundTint="@color/button_color"
         android:text="Alert"
         android:textColor="@color/black"
-
         android:textSize="60dp"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,20 +45,22 @@
         android:gravity="center">
         <Button
             android:id="@+id/btn_map"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/button_color"
             android:text="Map"
+            android:layout_marginRight="10dp"
             android:textColor="@color/black"
             android:textSize="40dp"/>
         <Button
             android:id="@+id/btn_image"
-            android:layout_width="200dp"
+            android:layout_width="165dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
             android:backgroundTint="@color/button_color"
             android:text="Image"
             android:textColor="@color/black"
@@ -73,22 +74,24 @@
         android:gravity="center">
         <Button
             android:id="@+id/btn_video"
-            android:layout_width="200dp"
+            android:layout_width="160dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:backgroundTint="@color/button_color"
             android:text="Video"
             android:textColor="@color/black"
             android:textSize="40dp"/>
         <Button
             android:id="@+id/btn_rate_us"
-            android:layout_width="200dp"
+            android:layout_width="160dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/button_color"
             android:text="Rate Us"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/black"
             android:textSize="40dp"/>
 

@@ -33,7 +33,7 @@ public class forgot_pass1 extends AppCompatActivity {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(forgot_pass1.this, Home_page.class);
+                Intent i = new Intent(forgot_pass1.this, LoginActivity.class);
             }
         });
         btnSendcode.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +46,7 @@ public class forgot_pass1 extends AppCompatActivity {
                 if(!Owner.isEmpty() && !Mtag.isEmpty() && !Phone.isEmpty()){
                     intent = new Intent(forgot_pass1.this, forgot_pass_enter_code.class);
                     startActivity(intent);
+                    finish();
                 }
                 else{
                     Toast.makeText(forgot_pass1.this, "Field(s) can not be empty", Toast.LENGTH_SHORT).show();

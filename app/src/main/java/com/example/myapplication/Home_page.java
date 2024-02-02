@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,8 +28,26 @@ public class Home_page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Home_page.this,Notification.class);
+                startActivity(i);
+                finish();
             }
         });
+        btn_map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=Motorway Lahore"));
+                startActivity(i);
+                finish();
+            }
+        });
+        /*btn_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_MEDIA_BUTTON);
+                startActivity(i);
+                finish();
+            }
+        });*/
     }
     public void init()
     {
