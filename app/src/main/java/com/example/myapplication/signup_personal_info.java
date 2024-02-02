@@ -35,6 +35,10 @@ public class signup_personal_info extends AppCompatActivity {
                 Intent intent;
                 if(!Owner.isEmpty() && !Mtag.isEmpty() && !Cnic.isEmpty()){
                     intent = new Intent(signup_personal_info.this, signup_vehicle_info.class);
+                    intent.putExtra("Owner" , Owner);
+                    intent.putExtra("Mtag" , Mtag);
+                    intent.putExtra("Cnic" , Cnic);
+
                     startActivity(intent);
                 }
                 else{
